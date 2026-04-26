@@ -1,33 +1,49 @@
 # Medical-Transcription-NLP-Analysis-with-spaCY
+## 🧬 Medical Transcription NLP Analysis (spaCy + scispaCy)
+
 Biomedical data is one of the most complex and information-rich domains in data science. From clinical notes to patient records, much of this data exists in unstructured text form, making it difficult to analyze using traditional methods. This is where Natural Language Processing (NLP) becomes essential—enabling the extraction of meaningful insights such as diseases, medications, and treatment patterns from raw clinical text.
 
 However, working with biomedical text comes with its own challenges. High-quality, publicly available datasets are scarce due to privacy concerns and regulatory restrictions. Even when available, the data is often noisy, inconsistent, and unstructured, requiring significant preprocessing before analysis.
 
-📊Project Overview
+### 📊 Project Overview
 
 In this project, I work with unstructured medical transcription data to demonstrate how NLP techniques can be applied in the healthcare domain.
 
- * Dataset Source: Medical transcription dataset scraped from the MTSamples website by Tara Boyle and made available on      Kaggle
- * Initial Dataset Shape: (4999, 6)
- * Post-Cleaning Shape: (4966, 6)
- * Platform Used: Databricks
+* **Dataset Source:** Medical transcription dataset scraped from the MTSamples website by Tara Boyle and made available on Kaggle
+* **Initial Dataset Shape:** (4999, 6)
+* **Post-Cleaning Shape:** (4966, 6)
+* **Platform Used:** Databricks
 
 The dataset consists of real-world medical transcription reports, which provide a rich source of clinical language but require careful preprocessing and domain-specific modeling.
 
-🔍 Methodology
+### 🔍 Methodology
+
 This project leverages advanced NLP techniques tailored for biomedical text:
 
-# * Named Entity Recognition (NER):
-   Using scispaCy models to identify key biomedical entities such as:
-   * Drug names
-   * Disease/condition names
+* **Named Entity Recognition (NER):**
+  Using *scispaCy* models to identify key biomedical entities such as:
 
- # * Rule-Based Matching:
-To enhance extraction accuracy, NER is combined with rule-based approaches to identify:
-Drug dosages
-Context-specific medication patterns
+  * Drug names
+  * Disease/condition names
+
+* **Rule-Based Matching:**
+  To enhance extraction accuracy, NER is combined with rule-based approaches to identify:
+
+  * Drug dosages
+  * Context-specific medication patterns
 
 By combining statistical NLP (NER) with deterministic rules, the project improves the precision of extracting clinically relevant information from unstructured text.
+
+### 💡 Why This Matters
+
+Accurate extraction of drugs and diseases from medical transcriptions has real-world applications in:
+
+* Clinical decision support systems
+* Pharmacovigilance and drug safety monitoring
+* Healthcare analytics and research
+
+This project highlights the potential of domain-specific NLP tools like spaCy and scispaCy in unlocking the value of biomedical text data.
+
 
 ⚠️Challenges in Cleaning & Preprocessing
 
